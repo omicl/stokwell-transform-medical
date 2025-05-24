@@ -7,8 +7,17 @@ This repository contains the source code for a hybrid classical-quantum model us
 ## 📌 Project Summary
 
 This project proposes a feature extraction method based on the Stockwell Transform (S-Transform) for processing ECG images from the [PhysioNet 2022 Moody Challenge](https://moody-challenge.physionet.org/2022/). The extracted features are then used in a classification pipeline to aid in automated diagnosis.
+## 📥 Download Dataset
 
----
+You can download the dataset used in this project using the following commands:
+
+**Using `wget` in terminal:**
+
+wget -r -N -c -np https://physionet.org/files/challenge-2022/1.0.0/
+
+Using AWS CLI (Amazon Web Services)
+
+aws s3 sync --no-sign-request s3://physionet-open/challenge-2022/1.0.0/ DESTINATION
 
 ## 📂 Folder Structure
 
